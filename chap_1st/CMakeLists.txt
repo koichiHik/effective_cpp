@@ -7,7 +7,12 @@ enable_testing()
 set(CMAKE_CXX_FLAGS 
   ${CMAKE_CXX_FLAGS} "-Wall -Wextra -pedantic -Wconversion -Wdouble-promotion")
 
+add_definitions(-std=gnu++0x)
+
 add_executable(chap_1st_1_1 src/chap_1st_1_1.cpp)
+add_executable(chap_1st_3_1 src/chap_1st_3_1.cpp)
+add_executable(chap_1st_3_2 src/chap_1st_3_2.cpp)
+add_executable(chap_1st_3_3 src/chap_1st_3_3.cpp)
 
 #target_compile_options(
 #  1st_chap_1
